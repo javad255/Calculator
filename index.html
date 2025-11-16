@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./sumsong-UX.css">
+    <style>
+        *{transition: all,800ms;}
+        /* حالت آیفون */
+        .container.iphone {
+            background: #1c1c1c;
+            border-radius: 40px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .container.iphone #monitor {
+            background: #1c1c1c;
+            color: white;
+        }
+
+        .container.iphone .btn {
+            background: #2c2c2c;
+            color: white;
+            border-radius: 15px;
+            box-shadow: none;
+        }
+
+        .container.iphone .btn:nth-child(4),
+        .container.iphone .btn:nth-child(8),
+        .container.iphone .btn:nth-child(12),
+        .container.iphone .btn:nth-child(16),
+        .container.iphone .btn:nth-child(20) {
+            background: #ff9500;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <label id="monitor"></label>
+        <div class="containerBtn">
+            <button class="btn" id="">%</button>
+            <button class="btn" id="">CE</button>
+            <button class="btn" id="">C</button>
+            <button class="btn" id="">&times</button>
+            <button class="btn" id="">1/<sub>x</sub> </button>
+            <button class="btn" id="">x <sup>2</sup></button>
+            <button class="btn" id="">&radic;</button>
+            <button class="btn" id="">&divide;</button>
+            <button class="btn" id="">7</button>
+            <button class="btn" id="">8</button>
+            <button class="btn" id="">9</button>
+            <button class="btn" id="">&times;</button>
+            <button class="btn" id="">4</button>
+            <button class="btn" id="">5</button>
+            <button class="btn" id="">6</button>
+            <button class="btn" id="">-</button>
+            <button class="btn" id="">1</button>
+            <button class="btn" id="">2</button>
+            <button class="btn" id="">3</button>
+            <button class="btn" id="">+</button>
+            <button class="btn" id="" disabled></button>
+            <button class="btn" id="">0</button>
+            <button class="btn" id="">.</button>
+            <button class="btn" id="">=</button>
+            <button id="switchStyle" class="btn">تغییر استایل</button>
+        </div>
+        
+    </div>
+<script src="./settings.js"></script>
+</body>
+</html>
